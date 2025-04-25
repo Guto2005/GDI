@@ -1,19 +1,16 @@
-# Ativa o mecanismo de reescrita de URL
-RewriteEngine On
-RewriteBase /
+# .htaccess - Configurações básicas de segurança
 
-# Impede listagem de diretórios
+# Evitar o acesso a arquivos .htaccess
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Impedir o acesso a diretórios sem index
 Options -Indexes
 
-# Remove .php da URL
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [L]
+# Habilitar reescrita de URL (se necessário)
+RewriteEngine On
 
-# Redireciona URLs não existentes para o index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
-
-# Página de erro personalizada
-ErrorDocument 404 /pages/404.php
+# Redirecionar todas as requisições para index.php (se necessário)
+# RewriteRule ^(.*)$ index.php/$1 [L]
