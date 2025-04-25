@@ -1,0 +1,19 @@
+# Ativa o mecanismo de reescrita de URL
+RewriteEngine On
+RewriteBase /
+
+# Impede listagem de diretórios
+Options -Indexes
+
+# Remove .php da URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redireciona URLs não existentes para o index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# Página de erro personalizada
+ErrorDocument 404 /pages/404.php
