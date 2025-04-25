@@ -2,14 +2,14 @@ header {
     display: flex;    
     flex-direction: row;
     align-items: center;
-    background-color: rgb(255, 245, 232);
     padding: 5px;
     width: 100%;
+    background-color: black;
 }
 
 .logo-clara-header{
     height: 20%;
-    width: 20%;
+    width: 25%;
     border: none;
     border-radius: 20px;
 }
@@ -23,6 +23,6 @@ header {
 }
 
 .header-links li a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }

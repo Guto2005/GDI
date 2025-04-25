@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="Logotipos-header">
-            <img class="logo-clara-header" src="assets\images\logotipos\logo_fundo_claro.png" alt="imagem do logo grupo duarte imóveis">
+            <img class="logo-clara-header" src="assets\images\logotipos\Design sem nome.png" alt="imagem do logo grupo duarte imóveis">
         </div>
         <nav>
             <ul class="header-links">

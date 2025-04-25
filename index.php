@@ -20,7 +20,12 @@
     ?> <!-- Cabeçalho -->
 
     <main>
-        <h1>Catálogo de Imóveis</h1>
+
+        <h1>Encontre o seu novo lar em apenas alguns cliques</h1>
+
+
+
+        <h2>Catálogo de Imóveis</h2>
 
         <!-- Lista de Imóveis -->
         <div class="imoveis-lista">

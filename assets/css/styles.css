@@ -3,9 +3,14 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    background-image: url('assets/images/istockphoto-517926085-2048x2048.jpg');
-    background-size: cover; /* Faz a imagem cobrir toda a área da tela */
-    background-position: center; /* Centraliza a imagem no fundo */
-    background-attachment: fixed; /* Garante que a imagem fique fixa ao rolar a página */
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
